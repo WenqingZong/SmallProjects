@@ -5,9 +5,11 @@ Repo for some small projects, one project one branch. Master branch is used as t
 # PDFTranslator
 Extract text content from a pdf file, and then use Google translation api to translate it into chinese.
 
+Last update: 17 May 2020
+
 Example usage:
 ```
-python3 test.pdf
+python3 pdf_translator.py test.pdf
 ```
 
 Code is tested under Windows 10 and MacOS with python 3.8.2, works as expected.
