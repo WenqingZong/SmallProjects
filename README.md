@@ -41,7 +41,7 @@ Last update: 17 May 2020
 
 Example usage:
 ```
-python3 test.pdf
+python3 pdf_translator.py test.pdf
 ```
 
 Code is tested under Windows 10 and MacOS with python 3.8.2, works as expected.
