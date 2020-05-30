@@ -189,60 +189,6 @@ def read_image_url_from_file(file_name):
 
 
 if __name__ == "__main__":
-    # title = '身材好是一种怎样的体验？'
-    # question_id = 26037846
-
-    # title = '女孩子胸大是什么体验？'
-    # question_id = 291678281
-
-    # title = '女生什么样的腿是美腿？'
-    # question_id = 310786985
-
-    # title = '你的择偶标准是怎样的？'
-    # question_id = 275359100
-
-    # title = "身材对女生很重要吗？"
-    # question_id = 307403214
-
-    # title = '女生腿长是什么样的体验？'
-    # question_id = 273711203
-
-    # title = '女生腕线过裆是怎样一种体验？'
-    # question_id = 315236887
-
-    # title = '有着一双大长腿是什么感觉？'
-    # question_id = 292901966
-
-    # title = '大胸女生如何穿衣搭配？'
-    # question_id = 26297181
-
-    # title = '胸大到底怎么穿衣服好看'
-    # question_id = 293482116
-
-    # title = '你的日常搭配是什么样子？'
-    # question_id = 35931586
-
-    # title = '女生穿成这样真的算暴露吗？'
-    # question_id = 321123412
-
-    # title = '那些传说中超好看的腿型都是什么样子的？'
-    # question_id = 273647787
-
-    # title = '身高一米58，体重120斤是不是真的很胖？'
-    # question_id = 320606641
-
-    # title = '什么样才叫好看的腿？'
-    # question_id = 63727821
-
-    # title = '当你有一双好看的腿之后，会不会觉得差一张好看的脸？'
-    # question_id = 266695575
-
-    # title = '拥有一双大长腿是怎样的体验？'
-    # question_id = 285321190
-
-    # title = '拥有一副令人羡慕的好身材是怎样的体验？'
-    # question_id = 297715922
-
     # 一个图片少的问题，用于测试
     title = "白色恐怖到底有多恐怖？"
     question_id = 63325499
