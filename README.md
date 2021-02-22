@@ -1,9 +1,16 @@
 # SmallProjects
 Repo for some small projects, one project one branch. Master branch is used as the release branch.
 
-Last update: 18 May 2020
+Last Update: 2021/2/22
 
-# Connect 4:
+## AnimalCrossingRingCon
+
+Using Titan2 to enable users to play Animal Crossing by using Ring Con.
+
+For detailed How-To instruction, please refer to [this page](https://www.controllerbend.com/animalcrossing_ringfit.html).
+
+
+## Connect 4:
 
 A connect 4 game in python, with an AI built in.
 
@@ -18,7 +25,7 @@ python3 connect4.py
 Code tested in Windows 10 with:\
 Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)] on win32
 
-# Clock Angle
+## Clock Angle
 Solutions in python and java for clock angle problem.
 
 Last update: 17 May 2020
@@ -49,7 +56,7 @@ and\
 Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)] on win32
 
 
-# PDFTranslator
+## PDFTranslator
 Extract text content from a pdf file, and then use Google translation api to translate it into chinese.
 
 Last update: 17 May 2020

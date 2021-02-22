@@ -1,0 +1,57 @@
+#pragma METAINFO("AnimalCrossingRingCon", 1, 0, "Wenqing Zong")
+
+#include <switch.gph>
+
+#define PRESSED 100.0
+#define INACTIVE 0.0
+
+int runCheck;
+
+init {
+    // Remap sticks so users can use the right joycon to move.
+    remapper_swap(SWITCH_LX, SWITCH_RX);
+    remapper_swap(SWITCH_LY, SWITCH_RY);
+    remapper_swap(SWITCH_A, SWITCH_RIGHT);
+    runCheck = 0;
+}
+
+main {
+    // Squeeze RingCon to use item, the original A button.
+    if (get_val(ACCEL_2_X) < -25.0) {
+        set_val(SWITCH_A, PRESSED);
+    }
+
+    nowRunning();
+
+    // Turn off buttons if user is not running.
+    if (runCheck < 70) {
+        set_val(SWITCH_LX, INACTIVE);
+        set_val(SWITCH_LY, INACTIVE);
+    }
+
+    // squats + hold RL = open phone.
+    if (get_val(ACCEL_1_Z) == -25.00 && get_val(SWITCH_R) == PRESSED) {
+        set_val(SWITCH_R, INACTIVE);
+        set_val(SWITCH_ZL, PRESSED);
+    }
+
+    // Turn off R so users can squat.
+    if (get_val(SWITCH_R) > INACTIVE && get_val(ACCEL_1_Z) != -25.0) {
+        set_val(SWITCH_R, INACTIVE);
+    }
+
+    if (runCheck < 0) {
+        runCheck = 0;
+    }
+}
+
+// The command to let user do things only if s/he is running.
+void nowRunning() {
+    if (get_val(ACCEL_1_Y) < -30.6) {
+        runCheck = 100;
+    }
+
+    if (get_val(ACCEL_1_Y) < -23.8 && get_val(ACCEL_1_Y) > -24.6) {
+        runCheck--;
+    }
+}
